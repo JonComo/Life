@@ -8,20 +8,14 @@
 
 #import "LFViewController.h"
 
+//Challenges...
+#import "LFDudeEating.h"
+
 @interface LFViewController ()
 
 @end
 
 @implementation LFViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -33,6 +27,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)eat:(id)sender
+{
+    [self presentViewWithChallenge:[LFDudeEating class]];
+}
+
+-(void)presentViewWithChallenge:(Class)class
+{
+    SPViewController *sparrowViewController = [[SPViewController alloc] init];
+    [sparrowViewController startWithRoot:class supportHighResolutions:YES];
+    sparrowViewController.preferredFramesPerSecond = 60;
+    sparrowViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:sparrowViewController animated:YES completion:nil];
 }
 
 @end

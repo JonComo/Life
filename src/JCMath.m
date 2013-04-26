@@ -31,9 +31,8 @@
     return sorting ? dx*dx + dy*dy : sqrt(dx*dx + dy*dy);
 }
 
-+(CGPoint)pointFromPoint:(CGPoint)point pushedBy:(float)pushAmount inDirection:(float)degrees
++(CGPoint)pointFromPoint:(CGPoint)point pushedBy:(float)pushAmount inDirection:(float)radians
 {
-    float radians = degrees * M_PI/180.0;
     point.x += pushAmount * cosf(radians);
     point.y += pushAmount * sinf(radians);
     
