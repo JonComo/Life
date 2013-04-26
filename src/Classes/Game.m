@@ -20,6 +20,8 @@
         quad.y = 50;
         [self addChild:quad];
         
+        //hey hey
+        
         [quad addEventListenerForType:SP_EVENT_TYPE_TOUCH block:^(id event) {
             NSLog(@"Touch that shit baby");
         }];
