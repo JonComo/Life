@@ -11,5 +11,6 @@
 @interface LFWiggler : NSObject
 
 +(void)wiggle:(SPDisplayObject *)object amount:(float)amount time:(float)time;
++(void)shake:(SPDisplayObject *)object amount:(float)amount time:(float)time;
 
 @end

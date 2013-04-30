@@ -12,6 +12,17 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		8647F741172C08CF00B59679 /* LFCars.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647F740172C08CF00B59679 /* LFCars.m */; };
+		8647F75E172C116500B59679 /* COBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8647F756172C116500B59679 /* COBG@2x.png */; };
+		8647F75F172C116500B59679 /* COBoom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8647F757172C116500B59679 /* COBoom@2x.png */; };
+		8647F760172C116500B59679 /* COBuildings1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8647F758172C116500B59679 /* COBuildings1@2x.png */; };
+		8647F761172C116500B59679 /* COBuildings2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8647F759172C116500B59679 /* COBuildings2@2x.png */; };
+		8647F762172C116500B59679 /* COBuildings3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8647F75A172C116500B59679 /* COBuildings3@2x.png */; };
+		8647F763172C116500B59679 /* COCar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8647F75B172C116500B59679 /* COCar@2x.png */; };
+		8647F764172C116500B59679 /* COCarBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8647F75C172C116500B59679 /* COCarBack@2x.png */; };
+		8647F768172C12DF00B59679 /* JCMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647F767172C12DF00B59679 /* JCMotionManager.m */; };
+		8647F76A172C12F500B59679 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647F769172C12F400B59679 /* CoreMotion.framework */; };
+		868CFF06172B4B130003CFEE /* SPSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 868CFF05172B4B130003CFEE /* SPSwipe.m */; };
 		86C6B151172AD1E500324058 /* LFDudeEating.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6B150172AD1E500324058 /* LFDudeEating.m */; };
 		86C6B155172AD42B00324058 /* LFWiggler.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C6B154172AD42B00324058 /* LFWiggler.m */; };
 		86C6B15B172AD75900324058 /* head@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C6B159172AD75900324058 /* head@2x.png */; };
@@ -71,6 +82,20 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* App-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "App-Prefix.pch"; sourceTree = "<group>"; };
+		8647F73F172C08CF00B59679 /* LFCars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCars.h; sourceTree = "<group>"; };
+		8647F740172C08CF00B59679 /* LFCars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCars.m; sourceTree = "<group>"; };
+		8647F756172C116500B59679 /* COBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COBG@2x.png"; sourceTree = "<group>"; };
+		8647F757172C116500B59679 /* COBoom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COBoom@2x.png"; sourceTree = "<group>"; };
+		8647F758172C116500B59679 /* COBuildings1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COBuildings1@2x.png"; sourceTree = "<group>"; };
+		8647F759172C116500B59679 /* COBuildings2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COBuildings2@2x.png"; sourceTree = "<group>"; };
+		8647F75A172C116500B59679 /* COBuildings3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COBuildings3@2x.png"; sourceTree = "<group>"; };
+		8647F75B172C116500B59679 /* COCar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COCar@2x.png"; sourceTree = "<group>"; };
+		8647F75C172C116500B59679 /* COCarBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "COCarBack@2x.png"; sourceTree = "<group>"; };
+		8647F766172C12DF00B59679 /* JCMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMotionManager.h; sourceTree = "<group>"; };
+		8647F767172C12DF00B59679 /* JCMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMotionManager.m; sourceTree = "<group>"; };
+		8647F769172C12F400B59679 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		868CFF04172B4B130003CFEE /* SPSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSwipe.h; sourceTree = "<group>"; };
+		868CFF05172B4B130003CFEE /* SPSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSwipe.m; sourceTree = "<group>"; };
 		86C6B14F172AD1E500324058 /* LFDudeEating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFDudeEating.h; sourceTree = "<group>"; };
 		86C6B150172AD1E500324058 /* LFDudeEating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFDudeEating.m; sourceTree = "<group>"; };
 		86C6B153172AD42B00324058 /* LFWiggler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFWiggler.h; sourceTree = "<group>"; };
@@ -107,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8647F76A172C12F500B59679 /* CoreMotion.framework in Frameworks */,
 				DE4A3DB910FFB0FE00FDA492 /* libSparrow.a in Frameworks */,
 				DE5C4E6E138ED109004892CA /* libz.dylib in Frameworks */,
 				DE8E6AA416B441A6007EE8BA /* GLKit.framework in Frameworks */,
@@ -148,6 +174,7 @@
 				86C6B156172AD43800324058 /* Utilities */,
 				86FCAF3F172ACF4F00C3B229 /* Media */,
 				86C6B152172AD1E800324058 /* DudeEating */,
+				8647F743172C08D200B59679 /* Cars */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				86FCAF51172AD0A400C3B229 /* icon@2x.png */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
@@ -184,6 +211,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8647F769172C12F400B59679 /* CoreMotion.framework */,
 				DE5C4E6D138ED109004892CA /* libz.dylib */,
 				DE8E6AA316B441A6007EE8BA /* GLKit.framework */,
 				DE3F093711B7B9DC009D4DB0 /* AVFoundation.framework */,
@@ -196,6 +224,29 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8647F743172C08D200B59679 /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				8647F73F172C08CF00B59679 /* LFCars.h */,
+				8647F740172C08CF00B59679 /* LFCars.m */,
+			);
+			name = Cars;
+			sourceTree = "<group>";
+		};
+		8647F755172C116500B59679 /* COCars */ = {
+			isa = PBXGroup;
+			children = (
+				8647F756172C116500B59679 /* COBG@2x.png */,
+				8647F757172C116500B59679 /* COBoom@2x.png */,
+				8647F758172C116500B59679 /* COBuildings1@2x.png */,
+				8647F759172C116500B59679 /* COBuildings2@2x.png */,
+				8647F75A172C116500B59679 /* COBuildings3@2x.png */,
+				8647F75B172C116500B59679 /* COCar@2x.png */,
+				8647F75C172C116500B59679 /* COCarBack@2x.png */,
+			);
+			path = COCars;
 			sourceTree = "<group>";
 		};
 		86C6B152172AD1E800324058 /* DudeEating */ = {
@@ -214,6 +265,10 @@
 				86C6B164172AE39B00324058 /* JCMath.h */,
 				86C6B153172AD42B00324058 /* LFWiggler.h */,
 				86C6B154172AD42B00324058 /* LFWiggler.m */,
+				868CFF04172B4B130003CFEE /* SPSwipe.h */,
+				868CFF05172B4B130003CFEE /* SPSwipe.m */,
+				8647F766172C12DF00B59679 /* JCMotionManager.h */,
+				8647F767172C12DF00B59679 /* JCMotionManager.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -221,6 +276,7 @@
 		86FCAF3F172ACF4F00C3B229 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				8647F755172C116500B59679 /* COCars */,
 				86FCAF40172ACF4F00C3B229 /* dudeEating */,
 			);
 			path = Media;
@@ -337,6 +393,13 @@
 				86C6B162172AE24F00324058 /* sushi@2x.png in Resources */,
 				86C6B168172AEB0D00324058 /* headHappy@2x.png in Resources */,
 				86C6B169172AEB0D00324058 /* headAngry@2x.png in Resources */,
+				8647F75E172C116500B59679 /* COBG@2x.png in Resources */,
+				8647F75F172C116500B59679 /* COBoom@2x.png in Resources */,
+				8647F760172C116500B59679 /* COBuildings1@2x.png in Resources */,
+				8647F761172C116500B59679 /* COBuildings2@2x.png in Resources */,
+				8647F762172C116500B59679 /* COBuildings3@2x.png in Resources */,
+				8647F763172C116500B59679 /* COCar@2x.png in Resources */,
+				8647F764172C116500B59679 /* COCarBack@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +416,9 @@
 				86C6B151172AD1E500324058 /* LFDudeEating.m in Sources */,
 				86C6B155172AD42B00324058 /* LFWiggler.m in Sources */,
 				86C6B165172AE39B00324058 /* JCMath.m in Sources */,
+				868CFF06172B4B130003CFEE /* SPSwipe.m in Sources */,
+				8647F741172C08CF00B59679 /* LFCars.m in Sources */,
+				8647F768172C12DF00B59679 /* JCMotionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

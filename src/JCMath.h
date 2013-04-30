@@ -16,4 +16,6 @@
 +(double)distanceBetweenPoint:(CGPoint)point1 andPoint:(CGPoint)point2 sorting:(BOOL)sorting;
 +(CGPoint)pointFromPoint:(CGPoint)point pushedBy:(float)pushAmount inDirection:(float)radians;
 
++(void)centerPivot:(SPDisplayObject *)object;
+
 @end

@@ -10,8 +10,14 @@
 
 //Challenges...
 #import "LFDudeEating.h"
+#import "LFCars.h"
 
 @interface LFViewController ()
+{
+    SPViewController *sparrowViewController;
+    __weak IBOutlet UILabel *eatenLabel;
+    __weak IBOutlet UILabel *drivenLabel;
+}
 
 @end
 
@@ -21,6 +27,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    eatenLabel.alpha = 0;
+    drivenLabel.alpha = 0;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gameOver:) name:@"LFGameOver" object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,13 +44,48 @@
     [self presentViewWithChallenge:[LFDudeEating class]];
 }
 
+- (IBAction)drive:(id)sender
+{
+    [self presentViewWithChallenge:[LFCars class]];
+}
+
 -(void)presentViewWithChallenge:(Class)class
 {
-    SPViewController *sparrowViewController = [[SPViewController alloc] init];
+    sparrowViewController = [[SPViewController alloc] init];
     [sparrowViewController startWithRoot:class supportHighResolutions:YES];
     sparrowViewController.preferredFramesPerSecond = 60;
-    sparrowViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    sparrowViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:sparrowViewController animated:YES completion:nil];
+}
+
+-(void)gameOver:(NSNotification *)notification
+{
+    if ([notification.userInfo[@"game"] isEqualToString:@"DE"]) {
+        eatenLabel.alpha = 0;
+        int points = [notification.userInfo[@"points"] intValue];
+        eatenLabel.text = [NSString stringWithFormat:@"Eaten: %i", points];
+        
+        [sparrowViewController dismissViewControllerAnimated:YES completion:^{
+            [UIView animateWithDuration:1 animations:^{
+                eatenLabel.alpha = 1;
+            }];
+        }];
+    }else if ([notification.userInfo[@"game"] isEqualToString:@"CO"]) {
+        drivenLabel.alpha = 0;
+        int points = [notification.userInfo[@"points"] intValue];
+        drivenLabel.text = [NSString stringWithFormat:@"Driven: %i", points];
+        
+        [sparrowViewController dismissViewControllerAnimated:YES completion:^{
+            [UIView animateWithDuration:1 animations:^{
+                drivenLabel.alpha = 1;
+            }];
+        }];
+    }
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

@@ -19,7 +19,7 @@
     float dx = point2.x - point1.x;
     float dy = point2.y - point1.y;
     
-    angle = atan2f(dy, dx) * 180 / M_PI;
+    angle = atan2f(dy, dx);
     
     return angle;
 }
@@ -37,6 +37,12 @@
     point.y += pushAmount * sinf(radians);
     
     return point;
+}
+
++(void)centerPivot:(SPDisplayObject *)object
+{
+    object.pivotX = object.width/2;
+    object.pivotY = object.height/2;
 }
 
 @end
